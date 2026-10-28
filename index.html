@@ -43,6 +43,15 @@
     .legacy-levers{display:none}
     .diagnostic{display:grid;grid-template-columns:.85fr 1.15fr;gap:30px}.score{padding:32px}.score-grid{display:grid;gap:12px}.score-row{display:grid;grid-template-columns:135px 1fr 38px;gap:12px;align-items:center;font-size:.86rem}.track{height:7px;background:#12243a;border-radius:99px;overflow:hidden}.track i{display:block;height:100%;width:var(--w);background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:99px}
     .scenarios{padding:32px}.scenario-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0}.scenario-tabs button{border:1px solid var(--line);background:#08182b;color:#c9d5e4;padding:10px 13px;border-radius:999px;cursor:pointer}.scenario-tabs button.active{background:var(--text);color:#07101e}.scenario-output{min-height:170px;padding:24px;border-radius:14px;background:#061221}.scenario-output strong{font-size:1.5rem}.scenario-output p{margin:10px 0 0}
+    .diagnostic{display:block}.evaluation{padding:30px}.evaluation>p{margin:0 0 20px;color:var(--muted)}.evaluation-table-wrap{overflow-x:auto}.evaluation-table{width:100%;min-width:760px;border-collapse:collapse;table-layout:fixed;font-size:.82rem}.evaluation-table th,.evaluation-table td{border:1px solid var(--line);padding:11px 9px;text-align:center}.evaluation-table thead th{background:#102039;color:#eaf3ff;font-weight:700}.evaluation-table th:first-child{width:150px;text-align:left}.evaluation-levels th{color:var(--cyan);font-size:.76rem}.evaluation-levels td{color:var(--muted);transition:background .16s,color .16s}.evaluation-levels td.is-selected{background:rgba(56,215,255,.16);color:var(--text);font-weight:700}.evaluation-control-row td{padding:9px 14px 14px}.evaluation-control{display:grid;grid-template-columns:130px minmax(100px,1fr) 150px;align-items:center;gap:14px}.evaluation-control label{color:var(--muted);font-size:.76rem;text-align:left}.evaluation-slider{width:100%;margin:0;accent-color:var(--cyan);cursor:pointer}.evaluation-control output{color:var(--text);font-size:.8rem;font-weight:700;text-align:right}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@media(max-width:560px){.evaluation{padding:20px 14px}.evaluation-table-wrap{overflow:visible}.evaluation-table{display:block;min-width:0;table-layout:auto}.evaluation-table thead{display:none}.evaluation-table tbody{display:block}.evaluation-table tr.evaluation-levels{display:grid;grid-template-columns:1fr;border-top:1px solid var(--line);padding-top:12px}.evaluation-table .evaluation-levels th,.evaluation-table .evaluation-levels td{display:none;width:auto;border:0;padding:4px 0;text-align:left}.evaluation-table .evaluation-levels th{display:block;color:var(--cyan)}.evaluation-table .evaluation-levels td.is-selected{display:block;background:transparent;color:var(--text);font-size:.95rem;font-weight:700}.evaluation-table tr.evaluation-control-row{display:block;border-bottom:1px solid var(--line)}.evaluation-table .evaluation-control-row td{display:block;border:0;padding:8px 0 16px}.evaluation-control{grid-template-columns:1fr 100px;gap:8px}.evaluation-control label{grid-column:1/-1}.evaluation-control output{font-size:.72rem}}
+    @media(min-width:561px){.evaluation-table-wrap{overflow:visible}.evaluation-table{display:block;min-width:0;table-layout:auto}.evaluation-table thead{display:none}.evaluation-table tbody{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 26px}.evaluation-table .evaluation-levels{display:none}.evaluation-table tr.evaluation-control-row{display:block;border-bottom:1px solid var(--line);padding:10px 0 16px}.evaluation-table .evaluation-control-row td{display:block;border:0;padding:0}.evaluation-control{display:flex;flex-direction:column;align-items:stretch;gap:8px}.evaluation-control label{font-size:.9rem;font-weight:700;color:var(--cyan)}.evaluation-control output{text-align:left}}@media(min-width:561px) and (max-width:800px){.evaluation-table tbody{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(min-width:561px){.evaluation-table-wrap{overflow-x:auto}.evaluation-table{display:table;min-width:760px;table-layout:fixed}.evaluation-table thead{display:table-header-group}.evaluation-table tbody{display:table-row-group}.evaluation-table .evaluation-levels{display:table-row}.evaluation-table tr.evaluation-control-row{display:table-row}.evaluation-table tr.evaluation-control-row td{display:table-cell}.evaluation-control{display:grid;grid-template-columns:130px minmax(100px,1fr) 150px;align-items:center;gap:14px}.evaluation-control label{font-size:.76rem;font-weight:400;color:var(--muted)}.evaluation-control output{display:none}}
+    @media(min-width:561px){.evaluation-table tr.evaluation-control-row td{padding-left:0;padding-right:0}.evaluation-control{grid-template-columns:150px minmax(0,1fr);column-gap:0}}
+    @media(min-width:561px){.evaluation-control{grid-template-columns:150px repeat(6,minmax(0,1fr));column-gap:0}.evaluation-slider{grid-column:2/8;justify-self:start;width:calc(83.333333% + 16px);margin-left:calc(8.333333% - 8px);appearance:none;background:transparent}.evaluation-slider::-webkit-slider-runnable-track{height:4px;background:linear-gradient(90deg,var(--blue) 0%,var(--blue) var(--progress,0%),#12243a var(--progress,0%),#12243a 100%);border-radius:99px}.evaluation-slider::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;margin-top:-6px;border:2px solid var(--text);border-radius:50%;background:var(--cyan)}.evaluation-slider::-moz-range-track{height:4px;background:#12243a;border-radius:99px}.evaluation-slider::-moz-range-progress{height:4px;background:var(--blue);border-radius:99px}.evaluation-slider::-moz-range-thumb{width:12px;height:12px;border:2px solid var(--text);border-radius:50%;background:var(--cyan)}.evaluation-slider:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}}
+    @media(min-width:901px){.evaluation-table{width:66.6667%;margin-left:0;margin-right:auto}}
+    .evaluation-control label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .evaluation-layout{display:grid;grid-template-columns:1fr;gap:24px}.evaluation-radar-panel h4{margin:0 0 10px;color:var(--text);font-size:1rem}.evaluation-radar{display:block;width:100%;height:auto;overflow:visible}.radar-grid{fill:none;stroke:rgba(159,178,201,.24);stroke-width:1}.radar-axis{stroke:rgba(159,178,201,.32);stroke-width:1}.radar-area{fill:rgba(77,121,255,.2);stroke:var(--blue);stroke-width:2}.radar-marker{fill:var(--cyan);stroke:var(--bg);stroke-width:2}.radar-axis-label{fill:var(--muted);font-size:10px;font-weight:700}.radar-value{fill:var(--cyan);font-size:11px;font-weight:800}.evaluation-result{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}.evaluation-category-boxes{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}.evaluation-category-box{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:#08182b;color:#c9d5e4;font-size:.78rem;white-space:nowrap}.evaluation-category-box[aria-current="true"]{border-color:var(--text);background:var(--text);color:#07101e}.evaluation-result-description{margin:6px 0 4px;color:var(--text);font-size:.88rem;line-height:1.5}.evaluation-result-score,.evaluation-result-note{margin:5px 0 0;color:var(--muted);font-size:.76rem;line-height:1.45}.evaluation-method{margin-top:10px;color:var(--muted);font-size:.74rem;line-height:1.45}.evaluation-method summary{cursor:pointer;color:var(--cyan)}.evaluation-method p{margin:6px 0 0}.evaluation-description-row td{padding:8px 18px 16px;text-align:left;background:rgba(6,18,33,.55)}.evaluation-description{margin:0;color:var(--muted);font-size:.82rem;line-height:1.5}@media(min-width:901px){.evaluation-layout{grid-template-columns:minmax(0,2fr) minmax(260px,1fr);gap:24px;align-items:start}.evaluation-layout .evaluation-table{width:100%;margin:0}}@media(max-width:560px){.evaluation-description-row{display:block;border-bottom:1px solid var(--line)}.evaluation-description-row td{display:block;border:0;padding:4px 0 14px}.evaluation-radar-panel{max-width:420px;margin-inline:auto}}
+    .evaluation-category-box{border-color:var(--category-color);color:var(--category-color);transition:background .2s,border-color .2s,color .2s}.evaluation-category-box:nth-child(1){--category-color:var(--muted)}.evaluation-category-box:nth-child(2){--category-color:var(--cyan)}.evaluation-category-box:nth-child(3){--category-color:var(--blue)}.evaluation-category-box:nth-child(4){--category-color:var(--violet)}.evaluation-category-box[aria-current="true"]{border-color:var(--category-color);background:var(--category-color);color:#07101e;font-weight:700}.evaluation-category-box:nth-child(3)[aria-current="true"],.evaluation-category-box:nth-child(4)[aria-current="true"]{color:var(--text)}
     .team-section .section-intro{margin-bottom:1cm}.team-section .section-intro h2{margin-bottom:0}.team{display:grid;grid-template-columns:1fr 1fr;gap:16px}.team-equation{display:block;width:100%;margin:0 0 30px;text-align:center;color:var(--muted);font-size:2rem;font-weight:750;line-height:1.3}.person{padding:36px}.person h3{font-size:2rem;margin:0 0 32px}.plus{text-align:center;margin:44px 0 30px;padding:42px 36px;color:var(--muted)}.plus h3{font-size:1.4rem;margin:0 0 22px;color:var(--text)}.plus p{max-width:1100px;margin:0 auto 18px;font-size:1.15rem}.plus strong{display:block;margin-top:25px;color:var(--text);font-size:1.15rem}
     .cta{text-align:center;padding:145px 0}.cta h2{margin-inline:auto}.cta p{max-width:650px;margin:0 auto 28px}
     footer{border-top:1px solid var(--line);padding:28px 0;color:#788da6;font-size:.8rem}
@@ -240,12 +249,19 @@
 
 <section class="legacy-levers"><div class="wrap"><div class="section-intro reveal"><div><div class="eyebrow">Résultats business</div></div><div><h2>Quatre leviers. Un objectif : la compétitivité.</h2></div></div><div class="levers reveal"><svg class="cyber-lock" viewBox="0 0 132 132" aria-hidden="true"><circle cx="66" cy="66" r="62" fill="#030711" stroke="rgba(56,215,255,.35)" stroke-dasharray="3 7"></circle><circle class="cyber-ring" cx="66" cy="66" r="53" fill="none" stroke="#38d7ff" stroke-width="3" stroke-dasharray="60 23" stroke-linecap="round" opacity=".85"></circle><circle cx="66" cy="66" r="44" fill="#061a33" stroke="rgba(56,215,255,.6)" stroke-width="1.5"></circle><path d="M54 62v-8a12 12 0 0 1 24 0v8" fill="none" stroke="#bff3ff" stroke-width="5" stroke-linecap="round"></path><rect x="47" y="61" width="38" height="29" rx="6" fill="#bff3ff"></rect><circle cx="66" cy="72" r="4" fill="#061a33"></circle><path d="M64 74h4l1 9h-6z" fill="#061a33"></path></svg><div class="levers-inner"><article class="glass lever"><span class="metric">01 · Valeur</span><h3>Productivité</h3><p>Augmenter la valeur créée avec les ressources disponibles.</p></article><article class="glass lever"><span class="metric">02 · Flux</span><h3>Efficience</h3><p>Supprimer les frictions, doublons et validations sans valeur.</p></article><article class="glass lever"><span class="metric">03 · Confiance</span><h3>Qualité</h3><p>Fiabiliser les données, les analyses, les processus et les décisions.</p></article></div><div class="cyber-head"><h3>Cybersécurité</h3><p>Protéger la donnée</p></div></div></div></section>
 
-<section id="diagnostic"><div class="wrap"><div class="section-intro reveal"><div><div class="eyebrow">Diagnostic de compétitivité</div></div><div><h2>Votre entreprise est-elle construite pour le monde qui arrive ?</h2><p>Le diagnostic relie stratégie, systèmes, données, processus, décision, IA et résilience. Il débouche sur des priorités exécutables, pas sur un catalogue de technologies.</p></div></div><div class="diagnostic reveal"><div class="glass score"><h3>Radar de maturité</h3><p>Exemple illustratif</p><div class="score-grid"><div class="score-row"><span>Vision</span><div class="track"><i style="--w:72%"></i></div><b>7,2</b></div><div class="score-row"><span>Données</span><div class="track"><i style="--w:46%"></i></div><b>4,6</b></div><div class="score-row"><span>Décision</span><div class="track"><i style="--w:58%"></i></div><b>5,8</b></div><div class="score-row"><span>Processus</span><div class="track"><i style="--w:39%"></i></div><b>3,9</b></div><div class="score-row"><span>IA</span><div class="track"><i style="--w:27%"></i></div><b>2,7</b></div><div class="score-row"><span>Résilience</span><div class="track"><i style="--w:64%"></i></div><b>6,4</b></div></div></div><div class="glass scenarios"><h3>Projection stratégique</h3><div class="scenario-tabs" role="tablist"><button class="active" data-s="0">Statu quo</button><button data-s="1">Digitalisation</button><button data-s="2">Data-driven</button><button data-s="3">IA-native</button></div><div class="scenario-output" aria-live="polite"><strong id="scenarioTitle">Statu quo</strong><p id="scenarioText">Les outils évoluent, mais les silos, consolidations manuelles et délais de décision restent structurels.</p></div></div></div></div></section>
+<section id="diagnostic"><div class="wrap"><div class="section-intro reveal"><div><div class="eyebrow">Diagnostic de compétitivité</div></div><div><h2>Votre entreprise est-elle construite pour le monde qui arrive ?</h2><p>Le diagnostic relie stratégie, systèmes, données, processus, décision, IA et résilience. Il débouche sur des priorités exécutables, pas sur un catalogue de technologies.</p></div></div><div class="diagnostic reveal"><div class="glass evaluation"><h3>Grille d’évaluation</h3><p>Évaluez chaque dimension sur une échelle de 1 à 6.</p><div class="evaluation-table-wrap"><table class="evaluation-table"><caption class="sr-only">Niveaux de maturité par dimension, de 1 à 6</caption><thead><tr><th scope="col">Dimension</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th></tr></thead><tbody>
+<tr class="evaluation-levels"><th scope="row">SYSTÈMES</th><td data-level="1">Fragmentés</td><td data-level="2">Structurés</td><td data-level="3">Intégrés</td><td data-level="4">Industrialisés</td><td data-level="5">Modulaires</td><td data-level="6">Adaptatifs</td></tr><tr class="evaluation-control-row"><td colspan="7"><div class="evaluation-control"><label for="rating-systems">Niveau systèmes</label><input id="rating-systems" class="evaluation-slider" type="range" min="1" max="6" step="1" value="1" aria-valuetext="1 sur 6 : Fragmentés"><output for="rating-systems">1 · Fragmentés</output></div></td></tr>
+<tr class="evaluation-levels"><th scope="row">DONNÉES</th><td data-level="1">Dispersées</td><td data-level="2">Retraitées</td><td data-level="3">Fiabilisées</td><td data-level="4">Gouvernées</td><td data-level="5">Prédictives</td><td data-level="6">Contextuelles</td></tr><tr class="evaluation-control-row"><td colspan="7"><div class="evaluation-control"><label for="rating-data">Niveau données</label><input id="rating-data" class="evaluation-slider" type="range" min="1" max="6" step="1" value="1" aria-valuetext="1 sur 6 : Dispersées"><output for="rating-data">1 · Dispersées</output></div></td></tr>
+<tr class="evaluation-levels"><th scope="row">PROCESS</th><td data-level="1">Manuels</td><td data-level="2">Digitalisés</td><td data-level="3">Standardisés</td><td data-level="4">Automatisés</td><td data-level="5">Augmentés</td><td data-level="6">Autonomes</td></tr><tr class="evaluation-control-row"><td colspan="7"><div class="evaluation-control"><label for="rating-process">Niveau process</label><input id="rating-process" class="evaluation-slider" type="range" min="1" max="6" step="1" value="1" aria-valuetext="1 sur 6 : Manuels"><output for="rating-process">1 · Manuels</output></div></td></tr>
+<tr class="evaluation-levels"><th scope="row">DÉCISION</th><td data-level="1">Intuitive</td><td data-level="2">Descriptive</td><td data-level="3">Pilotée</td><td data-level="4">Analytique</td><td data-level="5">Prédictive</td><td data-level="6">Augmentée</td></tr><tr class="evaluation-control-row"><td colspan="7"><div class="evaluation-control"><label for="rating-decision">Niveau décision</label><input id="rating-decision" class="evaluation-slider" type="range" min="1" max="6" step="1" value="1" aria-valuetext="1 sur 6 : Intuitive"><output for="rating-decision">1 · Intuitive</output></div></td></tr>
+<tr class="evaluation-levels"><th scope="row">IA</th><td data-level="1">Expérimentale</td><td data-level="2">Assistée</td><td data-level="3">Ciblée</td><td data-level="4">Intégrée</td><td data-level="5">Agentique</td><td data-level="6">Native</td></tr><tr class="evaluation-control-row"><td colspan="7"><div class="evaluation-control"><label for="rating-ai">Niveau IA</label><input id="rating-ai" class="evaluation-slider" type="range" min="1" max="6" step="1" value="1" aria-valuetext="1 sur 6 : Expérimentale"><output for="rating-ai">1 · Expérimentale</output></div></td></tr>
+<tr class="evaluation-levels"><th scope="row">RÉSILIENCE</th><td data-level="1">Réactive</td><td data-level="2">Protégée</td><td data-level="3">Structurée</td><td data-level="4">Testée</td><td data-level="5">Proactive</td><td data-level="6">Adaptative</td></tr><tr class="evaluation-control-row"><td colspan="7"><div class="evaluation-control"><label for="rating-resilience">Niveau résilience</label><input id="rating-resilience" class="evaluation-slider" type="range" min="1" max="6" step="1" value="1" aria-valuetext="1 sur 6 : Réactive"><output for="rating-resilience">1 · Réactive</output></div></td></tr>
+</tbody></table></div></div></div></div></section>
 
 <section><div class="wrap team-section"><div class="section-intro reveal"><div><div class="eyebrow">Qui sommes-nous ?</div></div><div><h2>Une vision commune, portée par deux disciplines.</h2></div></div><div class="team-equation">(Finance + IT) × IA = Performance augmentée. Entreprise transformée</div><div class="team reveal"><article class="glass person"><h3>CFO</h3><p>20 ans d’expérience internationale en direction financière, en pilotage, en audit et en gestion des risques, acquise au sein de groupes industriels multinationaux. Une connaissance concrète des enjeux de performance, de gouvernance, de transformation et de décision dans des organisations complexes.</p></article><article class="glass person"><h3>DSI</h3><p>Un parcours international construit au sein de groupes industriels et d’environnements multinationaux, jusqu’aux fonctions de direction des systèmes d’information. Une connaissance concrète des systèmes, de la donnée, de la cybersécurité, des opérations et de la transformation digitale dans des organisations complexes.</p></article></div><div class="glass plus"><h3>Deux parcours internationaux. Deux expertises. Une même réalité : l’entreprise.</h3><p>Nous connaissons les contraintes du terrain, les systèmes historiques, les arbitrages budgétaires, les exigences de performance et la complexité des transformations à conduire à l’échelle internationale, sans interrompre l’activité.</p><strong>Notre conviction : l’IA n’a de valeur que lorsqu’elle rencontre cette réalité opérationnelle.</strong></div></div></section>
 
 </main>
-<footer><div class="wrap">© 2026 NEO Enterprise · Concevoir l’entreprise à l’ère de l’intelligence artificielle · France & Suisse</div></footer>
+<footer><div class="wrap">© 2026 NEO Enterprise · Concevoir l’entreprise à l’ère de l’intelligence artificielle<br>Tous droits réservés.</div></footer>
 
 <script>
 (() => {
@@ -286,8 +302,233 @@
     [0,1,3,4,2].forEach(i=>{const a=i*seg,range=Array.from({length:61},(_,k)=>a+seg*k/60),outline=[...range.map(s=>edge(s,1)),at(a+seg+tip),...range.reverse().map(s=>edge(s,-1)),at(a+tip)],p=document.createElementNS(ns,'path');p.setAttribute('class','value-loop-segment');p.setAttribute('d','M'+outline.map(fmt).join(' L')+'Z');valueLoop.querySelector('.value-loop-segments').append(p)});
     steps.forEach((step,i)=>{const pts=Array.from({length:25},(_,k)=>{const p=guide.getPointAtLength(i*seg+tip+14+(seg-tip-28)*k/24);return [p.x,p.y]});if(pts[24][0]<pts[0][0])pts.reverse();const labelPath=document.createElementNS(ns,'path');labelPath.id=`value-loop-label-${i}`;labelPath.setAttribute('d','M'+pts.map(p=>p.map(n=>n.toFixed(1)).join(' ')).join(' L'));valueLoop.querySelector('defs').append(labelPath);const text=document.createElementNS(ns,'text'),textPath=document.createElementNS(ns,'textPath');text.setAttribute('dominant-baseline','central');text.setAttribute('text-anchor','middle');textPath.setAttribute('href',`#${labelPath.id}`);textPath.setAttribute('startOffset','50%');textPath.textContent=`${step.querySelector('span').textContent} · ${step.querySelector('b').textContent}`;text.append(textPath);valueLoop.querySelector('.value-loop-labels').append(text)})}
   if(valueLoop){const stream=document.createElementNS('http://www.w3.org/2000/svg','g');stream.setAttribute('class','value-loop-stream');const colors=['#d7ffff','#38d7ff','#7debc0','#bffcff'];for(let i=0;i<42;i++){const dot=document.createElementNS('http://www.w3.org/2000/svg','circle');dot.setAttribute('r',i%7===0?'2.8':i%3===0?'1.8':'1.35');dot.setAttribute('fill',colors[i%colors.length]);dot.setAttribute('color',colors[i%colors.length]);const motion=document.createElementNS('http://www.w3.org/2000/svg','animateMotion');motion.setAttribute('dur',`${7+(i%6)*.8}s`);motion.setAttribute('begin',`${-(i*.28)}s`);motion.setAttribute('repeatCount','indefinite');motion.setAttribute('rotate','auto');const link=document.createElementNS('http://www.w3.org/2000/svg','mpath');link.setAttribute('href','#value-loop-path');motion.append(link);dot.append(motion);stream.append(dot)}const gleam=document.createElementNS('http://www.w3.org/2000/svg','path');gleam.setAttribute('class','value-loop-gleam');gleam.setAttribute('d',valueLoop.querySelector('#value-loop-path').getAttribute('d'));stream.append(gleam);valueLoop.querySelector('.value-loop-labels').before(stream)}
-  const cases=[['Statu quo','Les outils évoluent, mais les silos, consolidations manuelles et délais de décision restent structurels.'],['Digitalisation','Les tâches s’accélèrent. La performance progresse, mais l’entreprise reste largement pilotée par ses processus historiques.'],['Entreprise data-driven','Une donnée commune alimente les KPI et rapproche la décision de l’action. Les métiers gagnent en autonomie dans un cadre gouverné.'],['Entreprise IA-native','Les processus sont redessinés autour de la donnée, de l’automatisation, des scénarios et de l’intervention humaine sur les exceptions.']];
-  document.querySelectorAll('.scenario-tabs button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.scenario-tabs button').forEach(x=>x.classList.remove('active'));b.classList.add('active');const c=cases[+b.dataset.s];document.getElementById('scenarioTitle').textContent=c[0];document.getElementById('scenarioText').textContent=c[1]}));
+  const criterionDescriptions={
+    'SYSTÈMES':[
+      'Systèmes fragmentés, fichiers Excel parallèles, nombreuses ressaisies et dépendances individuelles.',
+      'ERP et applications structurantes présents, mais interfaces limitées et nombreux traitements périphériques manuels.',
+      'Systèmes critiques identifiés et globalement intégrés ; interfaces et référentiels structurés sur les principaux flux.',
+      'Architecture cible définie, intégrations industrialisées, responsabilités et standards établis.',
+      'Architecture modulaire et largement automatisée, permettant aux données et aux services de circuler rapidement entre métiers.',
+      "SI composable et adaptatif : l'architecture permet d'intégrer rapidement nouvelles données, automatisations, IA et nouveaux modèles opérationnels."
+    ],
+    'DONNÉES':[
+      'Données dispersées ; plusieurs versions d’un même chiffre ; rapprochements manuels fréquents.',
+      'Référentiels partiels et reporting structuré mais données encore largement retraitées manuellement.',
+      'Sources principales intégrées ; définitions communes sur les KPI critiques ; qualité mesurée partiellement.',
+      'Gouvernance, ownership, qualité et traçabilité établis ; donnée largement accessible et fiable.',
+      'Données disponibles rapidement pour analyse avancée, prévision et IA ; anomalies détectées automatiquement.',
+      'Data product / data fabric : données gouvernées, contextuelles et exploitables en continu par humains, processus et agents IA.'
+    ],
+    'PROCESS':[
+      'Processus peu formalisés, manuels et dépendants des personnes.',
+      'Processus définis mais avec tâches administratives, emails, Excel, validations et ressaisies nombreuses.',
+      'Processus clés standardisés et digitalisés ; premières automatisations interfonctionnelles.',
+      'Processus end-to-end mesurés ; automatisation du standard et gestion structurée des exceptions.',
+      'Processus repensés autour de la donnée et de l’IA ; interventions humaines concentrées sur décisions et exceptions.',
+      'Processus adaptatifs et largement autonomes, orchestrés en fonction du contexte, des événements et des objectifs.'
+    ],
+    'DÉCISION':[
+      'Décisions principalement intuitives ; données obtenues tardivement.',
+      'Reporting périodique décrivant essentiellement le passé.',
+      'KPI fiables et dashboards permettant de comprendre rapidement la situation actuelle.',
+      'Alertes, drivers opérationnels et analyses de causalité intégrés au pilotage.',
+      'Forecasts, scénarios et modèles prédictifs soutiennent régulièrement les décisions.',
+      'Décision augmentée : scénarios générés dynamiquement, recommandations et optimisation continue, avec gouvernance humaine explicite.'
+    ],
+    'IA':[
+      'Usage marginal ou expérimental.',
+      'Assistants individuels et cas d’usage ponctuels, sans gouvernance ni intégration significative.',
+      'Cas d’usage métiers priorisés ; gouvernance initiale ; Power Users identifiés ; mesure des bénéfices.',
+      'IA intégrée à plusieurs processus ; accès gouverné aux données et automatisations structurées.',
+      'IA prédictive et agents intégrés aux processus critiques ; décisions et actions partiellement automatisées.',
+      'AI-native : processus et organisation sont conçus autour de la collaboration humain + IA, avec contrôle, apprentissage et optimisation continus.'
+    ],
+    'RÉSILIENCE':[
+      'Dépendances critiques inconnues ; protections et procédures principalement réactives.',
+      'Sauvegardes, sécurité et contrôles existent mais avec couverture ou responsabilités hétérogènes.',
+      'Actifs critiques identifiés ; droits d’accès, sauvegarde, continuité et responsabilités structurés.',
+      'Résilience testée ; surveillance, traçabilité, contrôles et procédures de continuité intégrés aux opérations.',
+      'Détection proactive, scénarios de crise, capacités de récupération testées et gouvernance cyber/data/IA intégrée.',
+      'Résilience by design : systèmes et processus critiques sont conçus pour absorber, isoler et récupérer rapidement d’une perturbation majeure.'
+    ]
+  };
+  const tableWrap=document.querySelector('.evaluation-table-wrap');
+  const evaluationLayout=document.createElement('div');
+  evaluationLayout.className='evaluation-layout';
+  tableWrap.before(evaluationLayout);
+  evaluationLayout.append(tableWrap);
+  const radarPanel=document.createElement('aside');
+  radarPanel.className='evaluation-radar-panel';
+  const radarHeading=document.createElement('h4');
+  radarHeading.textContent='Radar des niveaux';
+  const svgNamespace='http://www.w3.org/2000/svg';
+  const radarSvg=document.createElementNS(svgNamespace,'svg');
+  radarSvg.setAttribute('class','evaluation-radar');
+  radarSvg.setAttribute('viewBox','0 0 420 400');
+  radarSvg.setAttribute('role','img');
+  const radarTitle=document.createElementNS(svgNamespace,'title');
+  radarTitle.textContent='Radar de maturité des six dimensions';
+  radarSvg.append(radarTitle);
+  const radarCenter={x:210,y:190};
+  const radarRadius=112;
+  const radarAngles=[-90,-30,30,90,150,210];
+  const radarDimensions=['SYSTÈMES','DONNÉES','PROCESS','DÉCISION','IA','RÉSILIENCE'];
+  const radarCoordinates=(value,index)=>{
+    const angle=radarAngles[index]*Math.PI/180;
+    const radius=radarRadius*value/6;
+    return {x:radarCenter.x+Math.cos(angle)*radius,y:radarCenter.y+Math.sin(angle)*radius};
+  };
+  const radarPoints=values=>values.map((value,index)=>{
+    const point=radarCoordinates(value,index);
+    return `${point.x.toFixed(1)},${point.y.toFixed(1)}`;
+  }).join(' ');
+  for(let level=1;level<=6;level++){
+    const ring=document.createElementNS(svgNamespace,'polygon');
+    ring.setAttribute('class','radar-grid');
+    ring.setAttribute('points',radarPoints(Array(6).fill(level)));
+    radarSvg.append(ring);
+  }
+  radarAngles.forEach(angle=>{
+    const line=document.createElementNS(svgNamespace,'line');
+    const radians=angle*Math.PI/180;
+    line.setAttribute('class','radar-axis');
+    line.setAttribute('x1',radarCenter.x);
+    line.setAttribute('y1',radarCenter.y);
+    line.setAttribute('x2',radarCenter.x+Math.cos(radians)*radarRadius);
+    line.setAttribute('y2',radarCenter.y+Math.sin(radians)*radarRadius);
+    radarSvg.append(line);
+  });
+  const radarArea=document.createElementNS(svgNamespace,'polygon');
+  radarArea.setAttribute('class','radar-area');
+  radarSvg.append(radarArea);
+  const radarMarkers=[];
+  const radarValueLabels=[];
+  const radarLabelPositions=[
+    {x:210,y:24,anchor:'middle'},
+    {x:326,y:116,anchor:'start'},
+    {x:326,y:260,anchor:'start'},
+    {x:210,y:365,anchor:'middle'},
+    {x:94,y:260,anchor:'end'},
+    {x:94,y:116,anchor:'end'}
+  ];
+  radarDimensions.forEach((dimension,index)=>{
+    const label=document.createElementNS(svgNamespace,'text');
+    label.setAttribute('class','radar-axis-label');
+    label.setAttribute('text-anchor',radarLabelPositions[index].anchor);
+    label.setAttribute('x',radarLabelPositions[index].x);
+    label.setAttribute('y',radarLabelPositions[index].y);
+    label.textContent=dimension;
+    radarSvg.append(label);
+    const valueLabel=document.createElementNS(svgNamespace,'text');
+    valueLabel.setAttribute('class','radar-value');
+    valueLabel.setAttribute('text-anchor',radarLabelPositions[index].anchor);
+    valueLabel.setAttribute('x',radarLabelPositions[index].x);
+    valueLabel.setAttribute('y',radarLabelPositions[index].y+16);
+    radarSvg.append(valueLabel);
+    radarValueLabels.push(valueLabel);
+    const marker=document.createElementNS(svgNamespace,'circle');
+    marker.setAttribute('class','radar-marker');
+    marker.setAttribute('r','4');
+    radarSvg.append(marker);
+    radarMarkers.push(marker);
+  });
+  const resultPanel=document.createElement('div');
+  resultPanel.className='evaluation-result';
+  resultPanel.setAttribute('aria-live','polite');
+  const categoryBoxes=document.createElement('div');
+  categoryBoxes.className='evaluation-category-boxes';
+  categoryBoxes.setAttribute('role','list');
+  categoryBoxes.setAttribute('aria-label','Catégories de maturité');
+  const categoryItems=['Statu quo','Digitalisation','Data-driven','IA-native'].map(name=>{
+    const item=document.createElement('span');
+    item.className='evaluation-category-box';
+    item.setAttribute('role','listitem');
+    item.textContent=name;
+    categoryBoxes.append(item);
+    return item;
+  });
+  const resultDescription=document.createElement('p');
+  resultDescription.className='evaluation-result-description';
+  const resultScore=document.createElement('p');
+  resultScore.className='evaluation-result-score';
+  const resultNote=document.createElement('p');
+  resultNote.className='evaluation-result-note';
+  const method=document.createElement('details');
+  method.className='evaluation-method';
+  const methodSummary=document.createElement('summary');
+  methodSummary.textContent='Méthode de calcul';
+  const methodText=document.createElement('p');
+  methodText.textContent='Moyenne des six dimensions à poids égal : <2 Statu quo ; 2 à <3 Digitalisation ; 3 à <4,5 Data-driven ; ≥4,5 IA-native. Data-driven requiert Systèmes ≥3, Données ≥4 et Processus ≥3. IA-native requiert aussi Systèmes et Données ≥4, Processus et IA ≥5, Décision et Résilience ≥4.';
+  method.append(methodSummary,methodText);
+  resultPanel.append(categoryBoxes,resultDescription,resultScore,resultNote,method);
+  radarPanel.append(radarHeading,radarSvg,resultPanel);
+  evaluationLayout.append(radarPanel);
+  const evaluationSliders=[...document.querySelectorAll('.evaluation-slider')];
+  const maturityCategories=[
+    {name:'Statu quo',description:'Les outils évoluent, mais les silos, consolidations manuelles et délais de décision restent structurels.'},
+    {name:'Digitalisation',description:'Les tâches s’accélèrent. La performance progresse, mais l’entreprise reste largement pilotée par ses processus historiques.'},
+    {name:'Entreprise data-driven',description:'Une donnée commune alimente les KPI et rapproche la décision de l’action. Les métiers gagnent en autonomie dans un cadre gouverné.'},
+    {name:'Entreprise IA-native',description:'Les processus sont redessinés autour de la donnée, de l’automatisation, des scénarios et de l’intervention humaine sur les exceptions.'}
+  ];
+  const updateClassification=values=>{
+    const average=values.reduce((sum,value)=>sum+value,0)/values.length;
+    const systems=values[0],data=values[1],process=values[2],decision=values[3],ai=values[4],resilience=values[5];
+    const dataDrivenReady=systems>=3&&data>=4&&process>=3;
+    const aiNativeReady=average>=4.5&&systems>=4&&data>=4&&process>=5&&decision>=4&&ai>=5&&resilience>=4;
+    let categoryIndex=average<2?0:average<3?1:average<4.5?2:3;
+    let reason='';
+    if(categoryIndex>=2&&!dataDrivenReady){categoryIndex=1;reason='Classement plafonné : les seuils Systèmes ≥3, Données ≥4 et Processus ≥3 ne sont pas tous atteints.';}
+    else if(categoryIndex===3&&!aiNativeReady){categoryIndex=2;reason='Classement plafonné : les seuils IA-native ne sont pas tous atteints.';}
+    const category=maturityCategories[categoryIndex];
+    categoryItems.forEach((item,index)=>{
+      if(index===categoryIndex)item.setAttribute('aria-current','true');
+      else item.removeAttribute('aria-current');
+    });
+    resultDescription.textContent=category.description;
+    resultScore.textContent=`Moyenne : ${average.toFixed(1).replace('.',',')} / 6`;
+    resultNote.textContent=reason;
+    resultNote.hidden=!reason;
+  };
+  const updateRadar=()=>{
+    const values=evaluationSliders.map(slider=>Number(slider.value));
+    radarArea.setAttribute('points',radarPoints(values));
+    values.forEach((value,index)=>{
+      const point=radarCoordinates(value,index);
+      radarMarkers[index].setAttribute('cx',point.x);
+      radarMarkers[index].setAttribute('cy',point.y);
+      radarValueLabels[index].textContent=String(value);
+    });
+    radarSvg.setAttribute('aria-label',`Radar des niveaux : ${radarDimensions.map((dimension,index)=>`${dimension} ${values[index]}`).join(', ')}`);
+    updateClassification(values);
+  };
+  document.querySelectorAll('.evaluation-slider').forEach(slider=>{
+    const controlRow=slider.closest('.evaluation-control-row');
+    const levelRow=controlRow.previousElementSibling;
+    const dimension=levelRow.querySelector('th').textContent.trim();
+    const descriptionRow=document.createElement('tr');
+    descriptionRow.className='evaluation-description-row';
+    descriptionRow.setAttribute('aria-live','polite');
+    const descriptionCell=document.createElement('td');
+    descriptionCell.colSpan=7;
+    const descriptionText=document.createElement('p');
+    descriptionText.className='evaluation-description';
+    descriptionCell.append(descriptionText);
+    descriptionRow.append(descriptionCell);
+    controlRow.after(descriptionRow);
+    const updateRating=()=>{
+      const level=slider.value;
+      const descriptor=levelRow.querySelector(`[data-level="${level}"]`).textContent;
+      levelRow.querySelectorAll('[data-level]').forEach(cell=>cell.classList.toggle('is-selected',cell.dataset.level===level));
+      slider.setAttribute('aria-valuetext',`${level} sur 6 : ${descriptor}`);
+      slider.nextElementSibling.textContent=`${level} · ${descriptor}`;
+      descriptionText.textContent=criterionDescriptions[dimension][Number(level)-1];
+      const progress=((Number(level)-Number(slider.min))/(Number(slider.max)-Number(slider.min)))*100;
+      slider.style.setProperty('--progress',`${progress}%`);
+      updateRadar();
+    };
+    slider.addEventListener('input',updateRating);
+    updateRating();
+  });
 })();
   const provocationImage=document.querySelector('.provocation-image');if(provocationImage){provocationImage.src='assets/Designer%20(5).png';const sheet=document.createElement('div');sheet.className='provocation-sheet';provocationImage.parentNode.insertBefore(sheet,provocationImage);sheet.append(provocationImage);const questions=document.querySelector('.questions');if(questions){sheet.append(questions);sheet.addEventListener('click',()=>sheet.classList.toggle('is-questions-visible'))}}
   (()=>{
